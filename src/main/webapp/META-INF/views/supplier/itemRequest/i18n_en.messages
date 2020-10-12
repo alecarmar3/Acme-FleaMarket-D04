@@ -1,4 +1,4 @@
-# i18n_es.messages
+# i18n_en.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -8,10 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.figment.label.title = Título
-authenticated.figment.label.inventor-name = Nombre de inventor
-authenticated.figment.label.text-piece = Trozo de texto
-authenticated.figment.label.price-min = Precio mínimo
-authenticated.figment.label.price-max = Precio máximo
+supplier.item-request.label.ticker = Ticker
+supplier.item-request.label.creation-date = Creation date
+supplier.item-request.label.quantity = Quantity
+supplier.item-request.label.notes = Notes
+supplier.item-request.label.buyer = Buyer
+supplier.item-request.label.item = Item
 	
-authenticated.figment.button.return = Volver
+supplier.item-request.button.return = Return

@@ -8,10 +8,13 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.figment.label.title = Título
-authenticated.figment.label.inventor-name = Nombre de inventor
-authenticated.figment.label.text-piece = Trozo de texto
-authenticated.figment.label.price-min = Precio mínimo
-authenticated.figment.label.price-max = Precio máximo
+authenticated.item.label.ticker = Identificador
+authenticated.item.label.creation-date = Fecha de creación
+authenticated.item.label.title = Título
+authenticated.item.label.category = Categoría
+authenticated.item.label.description = Descripción
+authenticated.item.label.price = Precio
+authenticated.item.label.photo = Foto
+authenticated.item.label.additional-information = Información adicional
 	
-authenticated.figment.button.return = Volver
+authenticated.item.button.return = Volver
