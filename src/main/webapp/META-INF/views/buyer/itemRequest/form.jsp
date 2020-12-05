@@ -16,13 +16,13 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.figment.label.title" path="title"/>
-	<acme:form-textbox code="authenticated.figment.label.inventor-name" path="inventorName"/>
-	<acme:form-textbox code="authenticated.figment.label.text-piece" path="textPiece"/>
-	<acme:form-integer code="authenticated.figment.label.price-min" path="priceMin"/>
-	<acme:form-integer code="authenticated.figment.label.price-max" path="priceMax"/>
+	<acme:form-textbox code="buyer.item-request.label.ticker" path="ticker"/>
+	<acme:form-moment code="buyer.item-request.label.creation-date" path="creationDate"/>
+	<acme:form-integer code="buyer.item-request.label.quantity" path="quantity"/>
+	<acme:form-textarea code="buyer.item-request.label.notes" path="notes"/>
+	<acme:form-textbox code="buyer.item-request.label.item" path="item.title"/>
 	
-  	<acme:form-return code="authenticated.figment.button.return"/>
+  	<acme:form-return code="buyer.item-request.button.return"/>
   	
 	
 </acme:form>

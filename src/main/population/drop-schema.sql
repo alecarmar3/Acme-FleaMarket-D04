@@ -11,13 +11,37 @@
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
 
+    alter table `buyer` 
+       drop 
+       foreign key FK_630a954if6nal5afofvjy73ob;
+
     alter table `consumer` 
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
 
+    alter table `item` 
+       drop 
+       foreign key `FK7r7pmef5wvaepffbi0xfrso2c`;
+
+    alter table `item_request` 
+       drop 
+       foreign key `FKr3hlggtp76aj9jbne38ycqggc`;
+
+    alter table `item_request` 
+       drop 
+       foreign key `FKnnmdv7dxh7a3yhwwnktmfkixp`;
+
     alter table `provider` 
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
+
+    alter table `specification_sheet` 
+       drop 
+       foreign key `FKtihypmcrtiq7u638oj8pngnse`;
+
+    alter table `supplier` 
+       drop 
+       foreign key FK_1h83guf8tf3di74bk4uhuo1ia;
 
     drop table if exists `administrator`;
 
@@ -27,9 +51,15 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `buyer`;
+
     drop table if exists `consumer`;
 
     drop table if exists `figment`;
+
+    drop table if exists `item`;
+
+    drop table if exists `item_request`;
 
     drop table if exists `material_sheet`;
 
@@ -39,7 +69,11 @@
 
     drop table if exists `sheet`;
 
+    drop table if exists `specification_sheet`;
+
     drop table if exists `suggestion`;
+
+    drop table if exists `supplier`;
 
     drop table if exists `tool_sheet`;
 

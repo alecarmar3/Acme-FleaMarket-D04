@@ -10,7 +10,7 @@
 
 authenticated.figment.label.title = Title
 authenticated.figment.label.inventor-name = Inventor name
-administrator.figment.label.text-piece = Text piece
+authenticated.figment.label.text-piece = Text piece
 authenticated.figment.label.price-min = Minimum price
 authenticated.figment.label.price-max = Maximum price
 	
