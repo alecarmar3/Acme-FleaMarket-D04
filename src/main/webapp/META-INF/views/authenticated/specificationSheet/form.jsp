@@ -25,7 +25,6 @@
 	</jstl:if>
 	
   	<acme:form-return code="authenticated.specification-sheet.button.return"/>
-    <acme:form-submit code="authenticated.specification-sheet.form.button.create" test="${command=='create'}" action="/authenticated/specification-sheet/create?AcmeItemId=${acmeItem.id}"/>
   	
 	
 </acme:form>
