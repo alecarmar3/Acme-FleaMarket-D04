@@ -41,7 +41,7 @@
 	<bean name="supplier1" class="acme.entities.roles.Supplier">
 		<property name="company" value="Company name 1"/>
 		<property name="homePage" value="http://www.supplier1.com"/>
-		<property name="itemCategory" value="Category 1"/>
+		<property name="acmeItemCategory" value="Category 1"/>
 		<property name="description" value="Description 1"/>
 		<property name="userAccount" ref="supplier1UserAccount"/>
 	</bean>
@@ -72,7 +72,7 @@
 	<bean name="supplier2" class="acme.entities.roles.Supplier">
 		<property name="company" value="Company name 2"/>
 		<property name="homePage" value="http://www.supplier2.com"/>
-		<property name="itemCategory" value="Category 2"/>
+		<property name="acmeItemCategory" value="Category 2"/>
 		<property name="description" value="Description 2"/>
 		<property name="userAccount" ref="supplier2UserAccount"/>
 	</bean>
@@ -103,7 +103,7 @@
 	<bean name="supplier3" class="acme.entities.roles.Supplier">
 		<property name="company" value="Company name 3"/>
 		<property name="homePage" value="http://www.supplier3.com"/>
-		<property name="itemCategory" value="Category 3"/>
+		<property name="acmeItemCategory" value="Category 3"/>
 		<property name="description" value="Description 3"/>
 		<property name="userAccount" ref="supplier3UserAccount"/>
 	</bean>
@@ -298,9 +298,9 @@
 		<property name="priceMax" value="238 EUR"/>
 	</bean>
 	
-	<!-- Item -->
+	<!-- AcmeItem -->
 	
-	<bean name="item1" class="acme.entities.Item">
+	<bean name="acmeItem1" class="acme.entities.AcmeItem">
 		<property name="ticker" value="GAR-19-000001"/>
 		<property name="creationDate" value="2019/04/18 13:49"/>
 		<property name="title" value="Shovel"/>
@@ -312,7 +312,7 @@
 		<property name="supplier" ref="supplier1"/>
 	</bean>
 	
-	<bean name="item2" class="acme.entities.Item">
+	<bean name="acmeItem2" class="acme.entities.AcmeItem">
 		<property name="ticker" value="TEC-20-000001"/>
 		<property name="creationDate" value="2020/09/04 10:23"/>
 		<property name="title" value="TV"/>
@@ -324,7 +324,7 @@
 		<property name="supplier" ref="supplier2"/>
 	</bean>
 	
-	<bean name="item3" class="acme.entities.Item">
+	<bean name="acmeItem3" class="acme.entities.AcmeItem">
 		<property name="ticker" value="ACC-20-000001"/>
 		<property name="creationDate" value="2020/01/11 19:32"/>
 		<property name="title" value="Watch"/>
@@ -336,33 +336,33 @@
 		<property name="supplier" ref="supplier2"/>
 	</bean>
 	
-	<!-- ItemRequest -->
+	<!-- AcmeItemRequest -->
 	
-	<bean name="itemRequest1" class="acme.entities.ItemRequest">
+	<bean name="acmeItemRequest1" class="acme.entities.AcmeItemRequest">
 		<property name="ticker" value="GAR-20-000001"/>
 		<property name="creationDate" value="2020/08/03 08:05"/>
 		<property name="quantity" value="2"/>
 		<property name="notes" value=""/>
 		<property name="buyer" ref="buyer1"/>
-		<property name="item" ref="item1"/>
+		<property name="acmeItem" ref="acmeItem1"/>
 	</bean>
 	
-	<bean name="itemRequest2" class="acme.entities.ItemRequest">
+	<bean name="acmeItemRequest2" class="acme.entities.AcmeItemRequest">
 		<property name="ticker" value="ACC-20-000002"/>
 		<property name="creationDate" value="2020/10/03 17:44"/>
 		<property name="quantity" value="1"/>
 		<property name="notes" value=""/>
 		<property name="buyer" ref="buyer3"/>
-		<property name="item" ref="item3"/>
+		<property name="acmeItem" ref="acmeItem3"/>
 	</bean>
 	
-	<bean name="itemRequest3" class="acme.entities.ItemRequest">
+	<bean name="acmeItemRequest3" class="acme.entities.AcmeItemRequest">
 		<property name="ticker" value="TEC-20-000002"/>
 		<property name="creationDate" value="2020/09/22 18:30"/>
 		<property name="quantity" value="1"/>
 		<property name="notes" value=""/>
 		<property name="buyer" ref="buyer3"/>
-		<property name="item" ref="item2"/>
+		<property name="acmeItem" ref="acmeItem2"/>
 	</bean>
 	
 	<!-- MaterialSheets -->
@@ -433,7 +433,7 @@
 		<property name="title" value="TV1"/>
 		<property name="description" value="Specification sheet for a TV"/>
 		<property name="photo" value="http://tv1.jpg"/>
-		<property name="item" ref="item2"/>
+		<property name="acmeItem" ref="acmeItem2"/>
 	</bean>
 	
 	<bean name="specificationSheet2" class="acme.entities.SpecificationSheet">
@@ -441,7 +441,7 @@
 		<property name="title" value="Shovel"/>
 		<property name="description" value="Specification sheet for a Shovel"/>
 		<property name="photo" value="http://shovel1.jpg"/>
-		<property name="item" ref="item1"/>
+		<property name="acmeItem" ref="acmeItem1"/>
 	</bean>
 	
 	<bean name="specificationSheet3" class="acme.entities.SpecificationSheet">
@@ -449,7 +449,7 @@
 		<property name="title" value="TV2"/>
 		<property name="description" value="Specification sheet 2 for a TV"/>
 		<property name="photo" value="http://tv2.jpg"/>
-		<property name="item" ref="item2"/>
+		<property name="acmeItem" ref="acmeItem2"/>
 	</bean>
 	
 	<bean name="specificationSheet4" class="acme.entities.SpecificationSheet">
@@ -457,7 +457,7 @@
 		<property name="title" value="Watch"/>
 		<property name="description" value="Specification sheet for a Watch"/>
 		<property name="photo" value=""/>
-		<property name="item" ref="item3"/>
+		<property name="acmeItem" ref="acmeItem3"/>
 	</bean>
 	
 	<!-- Suggestions -->

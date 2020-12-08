@@ -40,7 +40,7 @@ public class Supplier extends UserRole {
 	private String				homePage;
 
 	@NotBlank
-	private String				itemCategory;
+	private String				acmeItemCategory;
 
 	@NotBlank
 	private String				description;

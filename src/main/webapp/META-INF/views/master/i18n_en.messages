@@ -40,7 +40,7 @@ master.menu.anonymous.tool-sheet.list = List Tool sheets
 master.menu.authenticated = Authenticated
 master.menu.authenticated.advertisement.list = List Advertisements
 master.menu.authenticated.figment.list = List Figments
-master.menu.authenticated.item.list = List Items
+master.menu.authenticated.acme-item.list = List Items
 master.menu.authenticated.material-sheet.list = List Material sheets
 master.menu.authenticated.news.list = List News
 master.menu.authenticated.suggestion.list = List Suggestions
@@ -49,13 +49,13 @@ master.menu.authenticated.tool-sheet.list = List Tool sheets
 # master.menu.supplier #######################################################
 
 master.menu.supplier = Supplier
-master.menu.supplier.item.list-mine = List my items
-master.menu.supplier.item-request.list-to-mine = List requests to my items
+master.menu.supplier.acme-item.list-mine = List my items
+master.menu.supplier.acme-item-request.list-to-mine = List requests to my items
 
 # master.menu.buyer #######################################################
 
 master.menu.buyer = Buyer
-master.menu.buyer.item-request.list-mine = List my item requests
+master.menu.buyer.acme-item-request.list-mine = List my item requests
 
 # master.menu.administrator ###################################################
 
